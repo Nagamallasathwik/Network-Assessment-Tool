@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Sec - Port Scan Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Anurag Sec - Port Scan and Dictionary Attack Tool</h1>
+    <form id="scan-form">
+        <label for="target">Enter IP Address or Domain:</label>
+        <input type="text" id="target" name="target" required>
+        <button type="submit">Perform Scan</button>
+    </form>
+    <div id="results">
+        <h2>Results</h2>
+        <pre id="output"></pre>
+    </div>
+
+    <script>
+        const form = document.getElementById('scan-form');
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch('/perform_scan', {
+                method: 'POST',
+                body: formData
+            });
+            const result = await response.json();
+
+            const outputDiv = document.getElementById('output');
+            if (response.ok) {
+                outputDiv.innerText = `WHOIS Lookup:\n${result.whois}\n\nPort Scan:\n${result.port_scan}\n\nFTP Attack:\n${result.ftp_attack}\n\nSSH Attack:\n${result.ssh_attack}`;
+            } else {
+                outputDiv.innerText = `Error: ${result.error}`;
+            }
+        });
+    </script>
+</body>
+</html>
