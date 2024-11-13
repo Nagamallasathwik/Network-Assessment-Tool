@@ -1,0 +1,96 @@
+/* style.css */
+body {
+    background-color: #000;  /* Dark background */
+    color: #00ff00;  /* Neon green text */
+    font-family: 'Courier New', Courier, monospace;  /* Terminal-like font */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    text-shadow: 0 0 10px #00ff00;  /* Glowing text effect */
+}
+
+label {
+    color: #00ff00;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    background-color: #000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    width: 80%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+button {
+    background-color: #000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.terminal {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #00ff00;
+    background-color: #111;  /* Slightly lighter black */
+    box-shadow: 0 0 20px #00ff00;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#results {
+    margin-top: 30px;
+    background-color: #000;
+    padding: 20px;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    text-align: left;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#output {
+    border: 1px solid #00ff00;
+    padding: 10px;
+    background-color: #111;
+}
+
+/* Terminal blinking cursor effect */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking-cursor {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #00ff00;
+    animation: blink 1s infinite;
+}
+
