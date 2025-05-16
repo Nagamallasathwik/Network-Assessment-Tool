@@ -3,4 +3,3 @@ It provides a simple web interface where users can input a target IP address or 
 ![kali-linux-2024 3-virtualbox-amd64  Running  - Oracle VirtualBox 28-09-2024 18_39_40](https://github.com/user-attachments/assets/ccaca203-940f-4597-a421-c5a8e68718e5)
 ![kali-linux-2024 3-virtualbox-amd64  Running  - Oracle VirtualBox 28-09-2024 18_44_57](https://github.com/user-attachments/assets/6c932750-6d1e-43d6-8085-2f6e649c444e)
 ![kali-linux-2024 3-virtualbox-amd64  Running  - Oracle VirtualBox 28-09-2024 18_44_50](https://github.com/user-attachments/assets/f58605f4-dd4e-4f5b-8d0d-c82dad6f613b)
-![kali-linux-2024 3-virtualbox-amd64  Running  - Oracle VirtualBox 28-09-2024 18_43_09](https://github.com/user-attachments/assets/ed76a7cd-06ef-4860-b72f-4e6cba09f712)
